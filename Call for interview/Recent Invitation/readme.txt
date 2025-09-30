@@ -44,10 +44,3 @@ If you applied through the website, they’ll decide based on the match between 
 If you pass the review, you’ll be called for an interview (usually technical plus a role-fit discussion).
 From there, you can get matched to the project or other suitable roles.
 
-Quick Recap
-
-Invite route: Higher chances, mostly leads to an interview.
-
-Website route: More competitive, depends on test results and matching.
-
-Overall steps: Fill form → Take tests → Review → Interview → Get matched.
