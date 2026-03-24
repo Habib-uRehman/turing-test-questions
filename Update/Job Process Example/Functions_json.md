@@ -1,0 +1,7 @@
+update imap setting is like this 
+
+{ "name": "update_imap_settings", "description": "Update IMAP settings for the specified account", "parameters": { "type": "object", "properties": { "userId": { "type": "string", "description": "Email address of the user to fetch the profile", "pattern": "^(?:me|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})$" }, "enabled": { "type": "boolean", "description": "Whether IMAP is enabled for the account", "default": true }, "autoExpunge": { "type": "boolean", "description": "If this value is true, Email will immediately expunge a message when it is marked as deleted in IMAP", "default": true }, "expungeBehavior": { "type": "string", "enum": [ "archive", "trash", "deleteForever" ], "description": "The action that will be executed on a message when it is marked as deleted and expunged from the last visible IMAP folder", "default": "archive" }, "maxFolderSize": { "type": "string", "enum": [ "0", "1000", "2000", "5000", "10000" ], "description": "An optional limit on the number of messages that an IMAP folder may contain. A value of zero is interpreted to mean that there is no limit", "default": "0" } }, "required": [ "userId" ] } } 
+
+get imap setting json is like this 
+
+{ "name": "get_imap_settings", "description": "Get IMAP settings for the specified account", "parameters": { "type": "object", "properties": { "userId": { "type": "string", "description": "Email address of the user to fetch the profile", "pattern": "^(?:me|[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,})$" } }, "required": [ "userId" ] } }
